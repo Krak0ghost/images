@@ -18,7 +18,5 @@ RUN apt update
 
 RUN apt-get install -y docker-ce docker-ce-cli containerd.io
 
-RUN systemctl enable docker
-
 EXPOSE 22
 EXPOSE 2377
