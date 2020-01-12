@@ -18,3 +18,6 @@ RUN apt-get install -y docker-ce
 
 VOLUME /var/lib/docker
 
+RUN systemctl enable docker 
+
+# To work properly needed is launching container with connect to docker.sock: docker run -ti -v /var/run/docker.sock:/var/run/docker.sock
